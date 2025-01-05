@@ -23,8 +23,7 @@ const BlogDetail = async ({params}:{params:{detail:string}}) => {
         <h1> {blog.title}</h1>
         <p className={styles.excerpt}>{blog.excerpt}</p>
         <div className={styles.meta}>
-          <span>By {blog.author}</span>
-          <span>{blog.date}</span>
+        
         </div>
       </div>
       <div className={styles.imageWrapper}>
