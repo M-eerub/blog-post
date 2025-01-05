@@ -15,7 +15,8 @@ export default function Navbar() {
             color: "#1d3557",
           }}
         >
-          Latest Blog Posts
+          {" "}
+          All Blog Posts
         </h1>
         <div
           style={{
@@ -25,7 +26,7 @@ export default function Navbar() {
             justifyContent: "center",
           }}
         >
-          {blogData.slice(0, 3).map((blog) => (
+          {blogData.map((blog) => (
             <div
               key={blog.id}
               style={{
@@ -69,7 +70,7 @@ export default function Navbar() {
                     style={{
                       display: "inline-block",
                       padding: "0.5rem 1rem",
-                      backgroundColor: "Pink",
+                      backgroundColor: "pink",
                       color: "#1d3557",
                       borderRadius: "4px",
                       textDecoration: "none",
